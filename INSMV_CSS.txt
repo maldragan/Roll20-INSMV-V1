@@ -1,0 +1,359 @@
+.sheet-main {
+  width: 800px;
+}
+
+input{
+    width:95%;
+}
+
+select{
+    width:95%;
+}
+
+textarea{
+    width:95%;
+}
+
+/* ------------- section Caractéristique ------------- */
+
+.sheet-detail-carac{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "force     volonte    blessures"
+    "precision perception pouvoir"
+    "agilite   apparence  des";
+}
+.sheet-btRoll{
+    font-size: 20px !important;
+    border: 0px none;
+    box-shadow: none;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.0);
+}
+.sheet-detail-carac-item{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:50px;
+}
+.sheet-copy{
+    font-style: italic; 
+    font-size: 10px;
+    color:#808080;
+    margin-left:15px;
+}
+.sheet-force{
+    grid-area:force;
+}
+
+.sheet-precision{
+    grid-area:precision;
+}
+
+.sheet-agilite{
+    grid-area:agilite;
+}
+
+.sheet-volonte{
+    grid-area:volonte;
+}
+
+.sheet-perception{
+    grid-area:perception;
+}
+
+.sheet-apparence{
+    grid-area:apparence;
+}
+
+.sheet-blessures{
+    grid-area:blessures;
+}
+
+.sheet-pouvoir{
+    grid-area:pouvoir;
+}
+.sheet-des{
+    grid-area:des;
+}
+
+.sheet-profil{
+    background-color:grey;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "nom        rang       description"
+    "grade      superieur  description"
+    "couverture couverture description";
+}
+
+.sheet-nom{
+    grid-area:nom;
+}
+
+.sheet-rang{
+    grid-area:rang;
+}
+
+.sheet-grade{
+    grid-area:grade;
+}
+
+.sheet-superieur{
+    grid-area:superieur;
+}
+
+.sheet-couverture{
+    grid-area:couverture;
+}
+
+.sheet-description{
+    grid-area:description;
+}
+
+/* ------------- section Tableau ------------- */
+.sheet-ligne{
+    border-bottom: 1px solid #808080;
+    
+}
+
+.sheet-tableau {
+    
+    font-size: 15px !important;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.sheet-tableau .sheet-first {
+        flex-grow:0!important;
+        width: 80px;
+        text-align: left;
+        border-right: 2px solid #808080;
+}
+.sheet-tableau .sheet-reste {
+        width: auto;
+}
+
+/* ------------- section Talent ------------- */
+
+.sheet-detail-talent{
+    display:grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "talent-nom talent-rang talent-xp talent-jet";
+}
+
+.sheet-talent-nom{
+    grid-area:talent-nom;
+}
+
+.sheet-talent-rang{
+    grid-area:talent-rang;
+}
+
+.sheet-talent-xp{
+    grid-area:talent-xp;
+}
+
+/* ------------- section Pouvoir ------------- */
+
+.sheet-detail-pouvoir{
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "pouvoir-nom  pouvoir-rang pouvoir-num pouvoir-jet";
+}
+
+.sheet-pouvoir-nom{
+    grid-area:pouvoir-nom;
+}
+
+.sheet-pouvoir-rang{
+    grid-area:pouvoir-rang;
+}
+
+.sheet-pouvoir-num{
+    grid-area:pouvoir-num;
+}
+
+/*----------------- GENERAL CSS ------------------*/
+
+.sheet-label{
+    font-weight: bold;
+}
+
+.sheet-section {
+    padding: 5px;
+    border-style: solid;
+    margin: 5px;
+    background-color:Gainsboro;
+    border-radius: 5px;
+}
+
+.sheet-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow:1;
+}
+
+.sheet-flew-row-space-between{
+    justify-content:space-between;
+}
+
+.sheet-flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+}
+
+.sheet-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------- Jet 666 -------------*/
+.sheet-rolltemplate-jet .sheet-container {
+      background-color: #ffffff;
+      border: 1px solid;
+      padding: 2px;
+      width: 95%;
+      border-radius: 5px;
+  }
+  
+  .sheet-rolltemplate-jet .sheet-container h1 {
+      color: rgb(126, 45, 64);
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 20px;
+  }
+  
+  .sheet-rolltemplate-jet div {
+      padding: 2px;
+  }
+  
+  .sheet-rolltemplate-jet div .sheet-tirage {
+      color: rgb(126, 45, 64);
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 20px;
+      margin-top=6px;
+  }
+   
+   
+  .sheet-rolltemplate-jet span {
+      color: rgb(126, 45, 64);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 1.6em;
+      padding-left: 5px;
+      text-align: left;
+  }
+   .sheet-rolltemplate-jet .sheet-arrow-right {
+      border-bottom: 2px solid transparent;
+      border-left: 200px solid rgb(126, 45, 64);
+      border-top: 2px solid transparent;
+  }
+  
+  /* ------------- Jet 66 ------------- */
+
+  
+  /* ---- */
+  .sheet-rolltemplate-jet66 .sheet-container {
+      background-color: #ffffff;
+      border: 1px solid;
+      padding: 2px;
+      width: 95%;
+      border-radius: 5px;
+  }
+  
+  .sheet-rolltemplate-jet66 .sheet-container h1 {
+      color: rgb(126, 45, 64);
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 20px;
+  }
+  
+  .sheet-rolltemplate-jet66 div {
+      padding: 2px;
+  }
+  
+  .sheet-rolltemplate-jet66 div .sheet-tirage {
+      color: rgb(126, 45, 64);
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 20px;
+      margin-top=6px;
+  }
+   
+   
+  .sheet-rolltemplate-jet66 span {
+      color: rgb(126, 45, 64);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2em;
+      font-variant: small-caps;
+      line-height: 1.6em;
+      padding-left: 5px;
+      text-align: left;
+  }
+   .sheet-rolltemplate-jet66 .sheet-arrow-right {
+      border-bottom: 2px solid transparent;
+      border-left: 200px solid rgb(126, 45, 64);
+      border-top: 2px solid transparent;
+  }
+  
+ 
+ 
+/* ------------- Critiques 111 et 666 ------------- */
+    .sheet-rolltemplate-jet .sheet-crit-angel {
+      text-align: left;
+      font-size: 1.9em;
+      text-shadow: 0.1em 0.1em 0.2em #333;
+      font-weight: bold;
+      margin-top: 7px;
+      margin-bottom: 7px;
+  }
+  .sheet-rolltemplate-jet .sheet-crit-angel::before{
+      content: "✝✝✝   ";
+      font-size: 1em;
+      color: #e1ac71;
+      text-shadow: -1px -1px 0 #795202, 1px -1px 0 #795202, -1px 1px 0 #795202, 1px 1px 0 #795202;
+  }
+  
+  .sheet-rolltemplate-jet .sheet-crit-angel::after{
+      content: "   ✝✝✝";
+      font-size: 1em;
+      color: #e1ac71;
+      text-shadow: -1px -1px 0 #795202, 1px -1px 0 #795202, -1px 1px 0 #795202, 1px 1px 0 #795202;
+  }
+  
+  .sheet-rolltemplate-jet .sheet-crit-demon {
+      text-align: left;
+      color: #b50a0a;
+      font-size: 1.9em;
+      text-shadow: 0.025em 0.025em 0.15em #db2929;
+      font-family: "Shadows Into Light";
+      font-weight: bold;
+      margin-top: 7px;
+      margin-bottom: 7px;
+  }
+  
+  .sheet-rolltemplate-jet .sheet-crit-demon::before{
+      content: "⛧⛧⛧   ";
+      color: #a01818;
+      font-size: 1em;
+      text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  }
+  
+  .sheet-rolltemplate-jet .sheet-crit-demon::after{
+      content: "   ⛧⛧⛧";
+      color: #a01818;
+      font-size: 1em;
+      text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  }

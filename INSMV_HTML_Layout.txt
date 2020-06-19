@@ -1,0 +1,361 @@
+<div class="main flex-col">
+    <div class="header section">
+      <h1 style="text-align: center">In Nomine Satanis / Magna Veritas</h1>
+    </div>
+    
+    <div class="section profil">
+
+        <div class="nom flex-col">
+            <span class="label">NOM: </span>
+            <input name="attr_character_name" type="text"/>
+        </div>
+                
+        <div class="rang flex-col">
+            <span class="label">RANG: </span>
+                <select name="attr_rang" class="dtype"> 
+                <option value="Humain">Humain</option>
+                <option value="Mort-Vivant">Mort-Vivant</option>
+                <option value="Familier">Familier</option>
+                <option value="Demon">Démon</option>
+                <option value="Prince-Demon">Prince-Démon</option>
+                <option value="Serviteur-de-Dieu">Serviteur de Dieu</option>
+                <option value="Soldat-de-Dieu">Soldat de Dieu</option>
+                <option value="Ange">Ange</option>
+                <option value="Archange">Archange</option>
+            </select>
+        </div>
+
+
+        <div class="grade flex-col">
+            <span class="label">GRADE: </span>
+            <input name="attr_grade" type="text"/>
+        </div>
+                
+        <div class="superieur flex-col">
+            <span class="label">SUPÉRIEUR: </span>
+            <select name="attr_superieur" class="dtype"> 
+                <option value="Andrealphus">⛧Andrealphus</option>
+                <option value="Andromalius">⛧Andromalius</option>
+                <option value="Baal">⛧ Baal</option>
+                <option value="Beleth">⛧ Beleth</option>
+                <option value="Belial">⛧ Belial</option>
+                <option value="Bifrons">⛧ Bifrons</option>
+                <option value="Blandine">✝ Blandine</option>
+                <option value="Chistophe">✝ Christophe</option>
+                <option value="Crocell">⛧ Crocell</option>
+                <option value="Daniel">✝ Daniel</option>
+                <option value="Dominique">✝ Dominique</option>
+                <option value="Haagenti">⛧ Haagenti</option>
+                <option value="Janus">✝ Janus</option>
+                <option value="Jean">✝ Jean</option>
+                <option value="Jordi">✝ Jordi</option>
+                <option value="Kronos">⛧ Kronos</option>
+                <option value="Laurent">✝ Laurent</option>
+                <option value="Malphas">⛧ Malphas</option>
+                <option value="Malthus">⛧ Malthus</option>
+                <option value="Novalis">✝ Novalis</option>
+                <option value="Ouikka">⛧ Ouikka</option>
+                <option value="Valefor">⛧ Vaelfor</option>
+                <option value="Vephar">⛧ Vephar</option>
+                <option value="Yves">✝ Yves</option>
+            </select>
+        </div>
+
+            
+        <div class="couverture flex-col">
+            <span class="label">COUVERTURE: </span>
+            <input name="attr_couverture" type="text" />
+        </div>
+
+        <div class="description flex-col">
+            <span class="label">DESCRIPTION: </span>
+            <textarea name="attr_description"></textarea>
+        </div>
+    </div>
+    
+    <div class="skill section detail-carac">
+        <div class="force detail-carac-item">
+            <span class="label">FORCE</span><input type="number" name="attr_for" min="1" max="6" value="1"/>
+             <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Force}} {{level=@{for}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="agilite detail-carac-item">
+            <span class="label">AGILITE</span><input type="number" name="attr_agi" min="1" max="6" value="1"/>
+            <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Agilité}} {{level=@{agi}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="perception detail-carac-item">
+            <span class="label">PERCEPTION</span><input type="number" name="attr_per" min="1" max="6" value="1"/>
+            <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Perception}} {{level=@{per}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="precision detail-carac-item">
+            <span class="label">PRECISION</span><input type="number" name="attr_pre" min="1" max="6" value="1"/>
+            <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Précision}} {{level=@{pre}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="volonte detail-carac-item">
+            <span class="label">VOLONTE</span><input type="number" name="attr_vol" min="1" max="6" value="1"/>
+            <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Volonté}} {{level=@{vol}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="apparence detail-carac-item">
+            <span class="label">APPARENCE</span><input type="number" name="attr_app" min="1" max="6" value="1"/>
+            <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Caractéristique}} {{subtags=Apparence}} {{level=@{app}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+        <div class="blessures detail-carac-item">
+            <span class="label">BLESSURES</span>
+            <input type="number" name="attr_blessures" min="-2" value="0"/>/
+            <input type="number" name="attr_blessures_max" min="1" value="1"/>
+        </div>
+        <div class="pouvoir detail-carac-item">
+            <span class="label">POUVOIR</span>
+            <input type="number" name="attr_pouvoir" min="0" />/
+            <input type="number" name="attr_pouvoir_max" min="1" value="1"/>
+        </div>
+        <div class="des detail-carac-item">
+            <span class="label">D66 ====> </span>
+             <button type="roll" class="sheet-btRoll" title="Jet66" name="jet66"
+				 value="&{template:jet66} {{typeJet=Simple}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{bonus=[[?{De combien de Bonus ?|0}]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+        </div>
+    </div>
+    <div class="tableau section ">
+        
+            
+        <div class="flex-row ">
+            <div class="flex-col first">Niveau</div>
+            <div class="flex-col reste">Caractéristique</div>
+        </div>
+        <div class="flex-row ligne">
+            <div class="flex-col first" >&nbsp;</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">1</div>
+            <div class="flex-col">2</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">3</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">4</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">5</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">-</div>
+            <div class="flex-col">6</div>
+        </div>
+    
+        <div class="flex-row ligne">
+            <div class="flex-col first" >0</div>
+            <div class="flex-col">11</div>
+            <div class="flex-col">13</div>
+            <div class="flex-col">21</div>
+            <div class="flex-col">22</div>
+            <div class="flex-col">23</div>
+            <div class="flex-col">24</div>
+            <div class="flex-col">25</div>
+            <div class="flex-col">26</div>
+            <div class="flex-col">32</div>
+            <div class="flex-col">33</div>
+            <div class="flex-col">34</div>
+            <div class="flex-col">35</div>
+            <div class="flex-col">41</div>
+            <div class="flex-col">43</div>
+            <div class="flex-col">46</div>
+            <div class="flex-col">53</div>
+            <div class="flex-col">61</div>
+            <div class="flex-col">66</div>
+        </div>
+        <div class="flex-row ligne">
+            <div class="flex-col first" >+1</div>
+            <div class="flex-col">13</div>
+            <div class="flex-col">21</div>
+            <div class="flex-col">32</div>
+            <div class="flex-col">34</div>
+            <div class="flex-col">36</div>
+            <div class="flex-col">43</div>
+            <div class="flex-col">45</div>
+            <div class="flex-col">51</div>
+            <div class="flex-col">54</div>
+            <div class="flex-col">55</div>
+            <div class="flex-col">56</div>
+            <div class="flex-col">62</div>
+            <div class="flex-col">64</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+        </div>
+        <div class="flex-row ligne">
+            <div class="flex-col first" >+2</div>
+            <div class="flex-col">16</div>
+            <div class="flex-col">24</div>
+            <div class="flex-col">43</div>
+            <div class="flex-col">46</div>
+            <div class="flex-col">54</div>
+            <div class="flex-col">62</div>
+            <div class="flex-col">63</div>
+            <div class="flex-col">64</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-col first" >+3</div>
+            <div class="flex-col">31</div>
+            <div class="flex-col">43</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+            <div class="flex-col">66</div>
+        </div>
+        
+            
+        
+    </div>
+    
+    <div class="flex-row">
+        <div class="talent section flex-col">
+          <label style="backgroupd-color:;">TALENTS</label>
+          <div class="detail-talent">
+                    <div class="talent-nom">
+                        Nom
+                    </div>
+                    <div class="talent-rang">
+                        Rang
+                    </div>
+                    <div class="talent-xp">
+                        XP
+                    </div>
+                     <div class="pouvoir-jet">
+                    </div>
+                </div>
+          <fieldset class="repeating_talent">
+                <div class="detail-talent">
+                    <div class="talent-nom">
+                        <input name="attr_talent" type="text"  />
+                    </div>
+                    <div class="talent-rang">
+                        <select name="attr_niveau" class="dtype"> 
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="talent-xp">
+                        <input name="attr_xp" type="number"  />
+                    </div>
+                    <div class="pouvoir-jet">
+                        <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Talent}} {{subtags=@{talent}}} {{level=@{niveau}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+                    </div>
+                </div>
+          </fieldset>
+        </div>
+        
+        <div class="power section item">
+          <label>POUVOIRS</label>
+          <div class="detail-pouvoir">
+                    <div class="pouvoir-nom">
+                        Nom
+                    </div>
+                    <div class="pouvoir-rang">
+                        Rang
+                    </div>
+                    <div class="pouvoir-num">
+                        Numéro
+                    </div>
+                    <div class="pouvoir-jet">
+                        
+                    </div>
+              </div>
+          <fieldset class="repeating_pouvoir">
+              <div class="detail-pouvoir">
+                    <div class="pouvoir-nom">
+                        <input name="attr_pouvoir" type="text"/>
+                    </div>
+                    <div class="pouvoir-rang">
+                        <select name="attr_niveau" class="dtype"> 
+                            <option value="*">--</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="pouvoir-num">
+                        <input name="attr_num" type="number" value="111" min="111" max="665" />
+                    </div>
+                    <div class="pouvoir-jet">
+                        <button type="roll" class="sheet-btRoll" title="Jet" name="jet"
+				 value="&{template:jet} {{typeJet=Pouvoir}} {{subtags=@{pouvoir}}} {{level=@{niveau}}} {{jet1=[[1d6cs1cf6]]}}  {{jet2=[[1d6cs1cf6]]}} {{jet3=[[1d6cs1cf6]]}} {{offset=[[?{De combien de colonnes voulez-vous décaler ?|0}]]}}" />
+                    </div>
+              </div>
+          </fieldset>
+        </div>
+    </div>
+    
+    <div class="inv section">
+      <label>ÉQUIPEMENT</label>
+      <textarea name="attr_inventory"></textarea>
+    </div>
+    
+    <div class="inv section">
+      <label>SERVITEURS</label>
+      <textarea name="attr_serviteurs"></textarea>
+    </div>
+    <p class="copy">&copy;2020 - Créé par Pilule_rouge & Modifié par Maldragan</p>
+</div>
+
+<rolltemplate class="sheet-rolltemplate-jet66">
+    <div class="container">
+	<div ><h1>Jet 66 </h1></div>
+	<div class="arrow-container"><div class="arrow-right"></div></div>
+	
+	<div class="tirage">Décalage de {{offset}} Colonnes </div>
+	<div class="tirage">Jet : {{jet1}}{{jet2}} + {{bonus}}</div>
+	
+	</div>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-jet">
+    <div class="container">
+	<div ><h1>Test {{typeJet}} </h1></div>
+	<div class="tirage">{{subtags}} niv {{level}}</div>
+	<div class="arrow-container"><div class="arrow-right"></div></div>
+	<div class="tirage">Décalage de {{offset}} Colonnes </div>
+	<div class="tirage">Jet : {{jet1}}{{jet2}} &nbsp;/&nbsp; {{jet3}}</div>
+	{{#rollWasCrit() jet1}}{{#rollWasCrit() jet2}}{{#rollWasCrit() jet3}}
+    <div class="crit-angel">111</div>
+    {{/rollWasCrit() jet3}}{{/rollWasCrit() jet2}}{{/rollWasCrit() jet1}}
+    
+    {{#rollWasFumble() jet1}}{{#rollWasFumble() jet2}}{{#rollWasFumble() jet3}}
+    <div class="crit-demon">666</div>
+    {{/rollWasFumble() jet3}}{{/rollWasFumble() jet2}}{{/rollWasFumble() jet1}}
+	</div>
+</rolltemplate>
